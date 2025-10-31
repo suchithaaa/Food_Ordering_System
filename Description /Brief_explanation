@@ -1,0 +1,92 @@
+==============================
+ FOOD ORDERING SYSTEM PROJECT
+==============================
+
+📁 Project Type:
+----------------
+Web-based Java application using JSP, Servlets, and MySQL database.
+
+🧩 Technologies Used:
+---------------------
+- Java (JDK 8 or above)
+- JSP and Servlets
+- Apache Tomcat (version 9.0 or above)
+- MySQL Database (e.g., XAMPP / MySQL Community Server)
+- JDBC Connector (mysql-connector-j-9.5.0.jar)
+- HTML, CSS
+
+🗂 Project Structure:
+---------------------
+FoodOrderingSystem/
+│
+├── src/com/foodapp/
+│   ├── dbconnection.java
+│   ├── UserRegisterServlet.java
+│   ├── UserLoginServlet.java
+│   ├── CartServlet.java
+│   └── OrderServlet.java
+│
+├── WebContent/
+│   ├── index.jsp
+│   ├── register.jsp
+│   ├── login.jsp
+│   ├── Menu.jsp
+│   ├── Cart.jsp
+│   └── stylesheet.css
+│
+├── database/
+│   └── foodie.sql
+│
+└── README.txt
+
+🗄 Database Setup:
+------------------
+1. Open MySQL or phpMyAdmin.
+2. Run the following commands:
+
+   CREATE DATABASE foodie;
+   USE foodie;
+
+   CREATE TABLE user (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       name VARCHAR(20),
+       email VARCHAR(30),
+       password VARCHAR(25)
+   );
+
+   CREATE TABLE menu (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       item_name VARCHAR(30),
+       price INT
+   );
+
+   CREATE TABLE orders (
+       id INT PRIMARY KEY AUTO_INCREMENT,
+       username VARCHAR(30),
+       item_name VARCHAR(30),
+       price DOUBLE
+   );
+
+3. Insert sample menu data if needed:
+
+   INSERT INTO menu (item_name, price) VALUES ('Pizza', 200), ('Burger', 100), ('Pasta', 400);
+
+⚙️ Tomcat Configuration:
+------------------------
+1. Install Apache Tomcat 9 or higher.
+2. Place the project folder inside:
+   C:\apache-tomcat-9.0.109\webapps\FoodOrderingSystem
+3. Place `mysql-connector-j-9.5.0.jar` inside:
+   C:\apache-tomcat-9.0.109\lib\
+4. Start the Tomcat server.
+
+🚀 Running the Project:
+-----------------------
+1. Open your browser.
+2. Go to: http://localhost:8080/FoodOrderingSystem/
+3. Register a new user (if not already registered).
+4. Login using your credentials.
+5. Browse items in `Menu.jsp` and add to cart.
+6. Go to `Cart.jsp` and click “Place Order”.
+7. A success message should appear, confirming your order.
+
