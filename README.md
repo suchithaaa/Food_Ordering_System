@@ -3,7 +3,7 @@ The Food Ordering System is a web-based application developed to simplify the pr
 
 
 
-Objective:
+**Objective:**
 
 The main goal of this project is to automate and streamline the traditional food ordering process by providing a convenient online platform for customers and restaurant administrators. It reduces manual workload, minimizes errors, and enhances customer satisfaction through a smooth ordering experience.
 
@@ -21,9 +21,10 @@ Key Features:
 
 🧾 Database Integration: Uses MySQL to store user, menu, and order details.
 
-Technologies Used:
+**Technologies Used:**
 
 Frontend: HTML, CSS, JSP (Java Server Pages)
+
 Backend: Java Servlets
 
 Database: MySQL
@@ -32,7 +33,7 @@ Server: Apache Tomcat
 
 Tools: Eclipse / NetBeans IDE
 
-Database Structure:
+**Database Structure:**
 
 user: Stores user credentials (id, name, email, password)
 
@@ -40,7 +41,7 @@ menu: Contains food items and prices
 
 orders: Records user orders with timestamps
 
-Modules:
+**Modules:**
 
 User Module – Registration, Login, Logout
 
